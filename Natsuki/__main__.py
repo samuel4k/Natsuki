@@ -63,20 +63,22 @@ from Natsuki.modules.helper_funcs.misc import paginate_modules
 from Natsuki.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Konnichiwa {first} 
+Konnichiwa {} 
 
 I'm Ruki Mukami ,the Brain of Mansion..
 
 I'm Anime themed mamnagment bot from the Mortal Mansion!!
+
+Click /help for my Vampire skills
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="⚓️ Ruki Logs ⚓️", url="https://t.me/Natsuki_Updates"
+            text="⚓️ Ruki Logs ⚓️", url="https://t.me/Ruki_global_logs"
         ),
         InlineKeyboardButton(
-            text="⚙️ Support Group ⚙️", url="https://t.me/NatsukiSupport_Official"
+            text="⚙️ Support Group ⚙️", url="https://t.me/Ruki_support"
         ),
     ],
     [
