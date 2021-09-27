@@ -63,22 +63,25 @@ from Natsuki.modules.helper_funcs.misc import paginate_modules
 from Natsuki.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-👋 Hey There, My Name is 𝗡𝗮𝘁𝘀𝘂𝗸𝗶. 
-I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!
+Konnichiwa {first} 
+
+I'm Ruki Mukami ,the Brain of Mansion..
+
+I'm Anime themed mamnagment bot from the Mortal Mansion!!
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Natsuki News 🙋‍♂️", url="https://t.me/Natsuki_Updates"
+            text="⚓️ Ruki Logs ⚓️", url="https://t.me/Natsuki_Updates"
         ),
         InlineKeyboardButton(
-            text="Support Group 💬", url="https://t.me/NatsukiSupport_Official"
+            text="⚙️ Support Group ⚙️", url="https://t.me/NatsukiSupport_Official"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Source 🗒", url="Github.com/Sadew451"
+            text="Join Group", url="https://t.me/anime_plexus_chat"
         ),
         InlineKeyboardButton(
             text="Command Help ❓", callback_data="help_back"
@@ -86,16 +89,16 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add To Me Your Group ➕",
+            text="➕ Add To Me Your Mansion ➕",
             url="t.me/TheNatsukiBot?startgroup=true",
         ),
     ],
 ]
 
-NATSUKI_IMG = "https://telegra.ph/file/2d0fa7e07eb1fe3983aba.jpg"
+NATSUKI_IMG = "https://telegra.ph/file/60313740175211b4ac0af.jpg"
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/2d0fa7e07eb1fe3983aba.jpg)
+*Main Commands :* [🤖](https://telegra.ph/file/60313740175211b4ac0af.jpg)
 
 /start: Starts me! You've probably already used this.
 /help: Click this, I'll let you know about myself!
@@ -809,7 +812,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online ❤")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online 🦇")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
